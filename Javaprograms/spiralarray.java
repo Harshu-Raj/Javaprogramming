@@ -95,9 +95,9 @@ public class spiralarray {
             {15,26,37,48},
             {19,27,41,52},
             {23,34,55,56}};
-           // printspiral(matrix);
-         //  System.out.println( diagonalsum(matrix));
-         staircasesearch(matrix, 15);
+           printspiral(matrix);
+        //   System.out.println( diagonalsum(matrix));
+        //  staircasesearch(matrix, 15);
            
     }    
 }

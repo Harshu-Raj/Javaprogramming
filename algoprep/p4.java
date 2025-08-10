@@ -49,8 +49,9 @@ public class p4 {
                         System.err.print("*");
                     }
                     //spaces
-                    for(int)
+                    // for(int)
                 }
             }
     }
+}
 }

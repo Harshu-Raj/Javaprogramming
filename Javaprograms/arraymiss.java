@@ -9,10 +9,11 @@ public class arraymiss {
              a[i]=sc.nextInt();
         }
 //System.out.println(missingarray(a[],n));
-int k=missingarray(a[],n);
+int k=missingarray(a,n);
         
     }
-     int  missingarray(int a[],int n){
+
+     public static int  missingarray( int []a,int n){
         int i=0;
         while(a[i]!=i){
             //return (i);
