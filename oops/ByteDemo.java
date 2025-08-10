@@ -4,14 +4,14 @@ public class ByteDemo {
     public static void main(String[] args) throws Exception{
         // byte b[]={'a','b','c','d','e','f','g','h'};
 
-        ByteArrayOutputStream bis=new ByteArrayOutputStream(20);
-        // int x;
+        // ByteArrayOutputStream bis=new ByteArrayOutputStream(20);
+        // // int x;
 
-        bis.write('a');
-        bis.write('b');
-        bis.write('c');
-        bis.write('d');
-        bis.write('e');
+        // bis.write('a');
+        // bis.write('b');
+        // bis.write('c');
+        // bis.write('d');
+        // bis.write('e');
 
         // byte b[]=bis.toByteArray();
 
@@ -19,7 +19,7 @@ public class ByteDemo {
         //     System.out.println((char)x);
         // }
 
-        bis.writeTo(new FileOutputStream("byteexample.txt"));
+        // bis.writeTo(new FileOutputStream("byteexample.txt"));
 
         // String str=new String(bis.readAllBytes());
 
@@ -27,8 +27,15 @@ public class ByteDemo {
         // while((x=bis.read())!=-1){
         //     System.out.print((char)x);
         // }
-        bis.close();
+        // bis.close();
+        char c[]={'a','b','c','d','e','f','g','h'};
+        CharArrayReader cr=new CharArrayReader(c);
+        int x;
+        while((x=cr.read())!=-1){
+            System.out.print((char)x);
+        }
 
+        cr.close();
         
     }
 }
