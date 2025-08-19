@@ -5,11 +5,14 @@ public class binary {
     public static void binarysearching(int numbers[],int key){
         int first=0;
         int last=numbers.length-1;
+        boolean found =false;
         while(first<=last){
             int mid=(first+last)/2;
           if(key==numbers[mid]){
             System.out.println("Element is found at "+mid);
+            found=true;
             break;
+
           }
           if(key>numbers[mid]){
             first=mid+1;
@@ -22,7 +25,10 @@ public class binary {
            
 
         }
-       System.out.println("element does not exists.....");
+      //  System.out.println("element does not exists.....");
+      if(!found){
+        System.out.println("Element does not exist in the array");
+      }
         
 
     }
